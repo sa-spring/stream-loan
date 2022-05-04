@@ -5,7 +5,7 @@
     <modules>
         <module>loan-model</module>
         <module>loan-source</module>
-        <module>load-check</module>
+        <module>loan-check</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,7 +23,6 @@
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.0</spring-cloud.version>
     </properties>
-
 
 
     <dependencies>

@@ -12,13 +12,10 @@
     <artifactId>loan-model</artifactId>
     <packaging>jar</packaging>
 
-    <name>A Camel Route</name>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
 
 
     <build>
@@ -39,17 +36,6 @@
                 <version>3.2.0</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-
-            <!-- Allows the example to be run via 'mvn camel:run' -->
-            <plugin>
-                <groupId>org.apache.camel</groupId>
-                <artifactId>camel-maven-plugin</artifactId>
-                <version>3.16.0</version>
-                <configuration>
-                    <logClasspath>true</logClasspath>
-                    <mainClass>com.example.MainApp</mainClass>
                 </configuration>
             </plugin>
 
