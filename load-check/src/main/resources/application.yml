@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    function:
+      definition: checkLoan
+    stream:
+      function:
+        bindings:
+          checkLoan-in-0: output
+      bindings:
+        loan-declined:
+          destination: loan-declined
+        loan-approved:
+          destination: loan-approved
+      rabbit:
+        bindings:
+          output:
+            consumer:
+              declare-exchange: false

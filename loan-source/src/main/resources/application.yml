@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    function:
+      definition: supplyLoan
+    stream:
+      function:
+        bindings:
+          supplyLoan-out-0: loan
+      bindings:
+        loan:
+          destination: output
+
